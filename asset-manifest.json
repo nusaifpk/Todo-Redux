@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/nusaifpk/Todo-Redux.git/static/css/main.09b25d30.css",
-    "main.js": "/nusaifpk/Todo-Redux.git/static/js/main.7cf3be21.js",
-    "index.html": "/nusaifpk/Todo-Redux.git/index.html",
-    "main.09b25d30.css.map": "/nusaifpk/Todo-Redux.git/static/css/main.09b25d30.css.map",
-    "main.7cf3be21.js.map": "/nusaifpk/Todo-Redux.git/static/js/main.7cf3be21.js.map"
+    "main.css": "/nusaifpk/Todo-Redux/static/css/main.09b25d30.css",
+    "main.js": "/nusaifpk/Todo-Redux/static/js/main.7cf3be21.js",
+    "index.html": "/nusaifpk/Todo-Redux/index.html",
+    "main.09b25d30.css.map": "/nusaifpk/Todo-Redux/static/css/main.09b25d30.css.map",
+    "main.7cf3be21.js.map": "/nusaifpk/Todo-Redux/static/js/main.7cf3be21.js.map"
   },
   "entrypoints": [
     "static/css/main.09b25d30.css",
