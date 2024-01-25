@@ -6,11 +6,12 @@
     const AddTodoForm = () => {
         const [value, setValue] = useState('');
 
-        const dispatch = useDispatch();
+        const dispatch = useDispatch();                      // used for state management using redux pattern provided by REDUX LIBRARY
+
         const onSubmit = (e) => {
             e.preventDefault();
             
-            if (!value.trim()) {							 // If user did not typed anything before submit,then it shows an alert messege
+            if (!value.trim()) {							 // if user did not typed anything before submit,then it shows an alert messege
                 alert('Please type your todo......'); 
                 return;
             }
@@ -20,8 +21,7 @@
                     title: value
                 }),
                 setValue('')   
-            )
-            
+            )        
         };
 
         return (
