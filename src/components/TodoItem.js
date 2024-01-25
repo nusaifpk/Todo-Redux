@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { toggleComplete, deleteTodo, editTodo } from './Redux/todoSlice';
+import { deleteTodo, editTodo } from './Redux/todoSlice';
 
 
 const TodoItem = ({ id, title }) => {
@@ -9,7 +9,7 @@ const TodoItem = ({ id, title }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editedTitle, setEditedTitle] = useState(title);
 
-  const handleDelete = () => {
+  const handleDlt = () => {
     dispatch(deleteTodo({ id }));
   };
 
@@ -37,7 +37,7 @@ const TodoItem = ({ id, title }) => {
                     value={editedTitle}
                     onChange={handleTitleChange}
             />
-            <button className='control__icon' onClick={handleEditSubmit}><span><i class="ri-save-3-line"></i></span></button>
+            <button className='control__icon' onClick={handleEditSubmit}><span><i class="ri-save-3-line"></i></span></button>  
           </span>
         ) : (
           <span className='d-flex align-items-center'>
@@ -46,11 +46,12 @@ const TodoItem = ({ id, title }) => {
         )}
         <div>
           <button className='control__icon' onClick={handleEdit}><span><i class="ri-edit-box-line"></i></span></button>
-          <button className='control__icon' onClick={handleDelete}><span><i class="ri-delete-bin-line"></i></span></button>
+          <button className='control__icon' onClick={handleDlt}><span><i class="ri-delete-bin-line"></i></span></button>
         </div>
       </div>
     </li>
-    </center>
+    </center> 
+    
   );
 };
 
